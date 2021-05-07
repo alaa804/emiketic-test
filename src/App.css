@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+
+/* BLOG CAROUSEL */
+
+.container {
+  background-color:rgb(230, 227, 241);
+  padding:67px;
+  width :75vw;
+  height:300px;
+ 
+  margin:0 120px;
+  position: relative;
+  /* VERTICAL SCROLL */
+ overflow: scroll;
+ overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-container {
+  position: absolute;
+  margin: 50px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text {
+display: flex;
+justify-content: space;
+align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.text h2 {
+  position:absolute;
+  left: 0;
+  top:0;
+  font-weight: 500;
+  font-size: 30px;
+  color:rgb(62, 27, 133);
+}
+
+.border {
+  border: 1px solid rgb(62, 27, 133);
+  width:100px;
+ padding: 0.1px;
+  background-color:rgb(62, 27, 133);
+  margin-bottom: 30px;
+}
+
+
+
+.carousel-image {
+  position:relative;
+  width :300px;
+  height : 300px;
+  background-color: rgb(250, 246, 246);
+  border-radius:5px;
+  display:flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin:10px 0;
+  opacity: 0.9;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width:300px;
+  height:300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description {
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top:180px;
+font-size: 24px;
+color: rgb(5, 5, 5);
 }
+
+
+/* BLOG CAROUSEL */
+
+
+/* BLOG POST */
+.blog {
+  position:relative;
+  margin: 50px auto;
+  overflow: hidden;
+  padding: 15rem 38rem;
+  height:300px;
+  width:80px;
+  background-color: rgb(176, 176, 245);
+}
+
+.blog .item img {
+  width :50%;
+  height:100%;
+}
+
+.home-img {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+section .text {
+ position:absolute;
+ left :0;
+ top:0;
+ 
+}
+
+section .text h3 {
+  margin:100px 90px;
+  font-size: 35px;
+  font-weight:500;
+  color:rgb(104, 104, 161);
+}
+
+section .text a {
+  display:inline-block;
+  font-size: 25px;
+  margin:0 90px;
+  color:rgb(104, 104, 161);
+}
+
+.home-content {
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:700px;
+  height:570px;
+  margin:0 85px;
+  background-color:rgb(0, 225, 255);
+  z-index:55;
+}
+
+.home-content h2 {
+  color:#FFF;
+  margin:20px 40px;
+  font-weight: 500;
+}
+.home-content p {
+  color:#FFF;
+   margin:20px 40px;
+}
+
+.arrow {
+  position: absolute;
+  background:   rgb(176, 176, 245) url(./img/arrow1.png) ;
+  background-size:25px;
+  width:60px;
+  height:60px;
+  top:35px;
+  left:570px;
+  background-repeat:no-repeat;
+}
+
+ section .content {
+  position: absolute;
+  background:rgb(78, 76, 206) url(./img/arrow3.png) ;
+   background-size:25px;
+  background-repeat:no-repeat;
+  background-position: center;
+   width:60px;
+  height:60px;
+  bottom:0;
+  right:0;
+}
+
+ section .logo {
+ position: absolute;
+  background-size:25px;
+  background-repeat:no-repeat;
+  background-position: center;
+  background-color:rgb(104, 104, 161) ;
+  background-image: url(./img/arrow2.png) ;
+   width:60px;
+  height:60px;
+   top:0;
+   right:0;
+   margin-top:660px;
+}
+
+/* BLOG POST */
